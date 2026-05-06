@@ -71,8 +71,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[72px] items-center">
             <div className="grid grid-cols-1 gap-4">
-              <img src="https://images.unsplash.com/photo-1563720360259-2dd916fc1bdf?auto=format&fit=crop&w=600&q=80" className="rounded-2xl w-full h-[300px] object-cover shadow-lg border border-slate-200" alt="Plant Operations" />
-              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" className="rounded-2xl w-full h-[300px] object-cover shadow-lg border border-slate-200" alt="Cooling Tower Components" />
+              <img src="https://5.imimg.com/data5/GQ/WW/MY-11042831/package-cooling-tower-500x500.jpg?auto=format&fit=crop&w=600&q=80" className="rounded-2xl w-full h-[300px] object-cover shadow-lg border border-slate-200" alt="Plant Operations" />
+              <img src="https://2.imimg.com/data2/AA/LB/IMFCP-511510/spare-250x250.gif?auto=format&fit=crop&w=600&q=80" className="rounded-2xl w-full h-[300px] object-cover shadow-lg border border-slate-200" alt="Cooling Tower Components" />
             </div>
             
             <div>
