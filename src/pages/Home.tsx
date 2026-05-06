@@ -93,7 +93,7 @@ export default function Home() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Why us" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" />
+              <img src="https://img.magnific.com/premium-photo/both-petroleum-engineer-is-mission-inspect-oil-distillation-huge-oil-refinery_1235831-335546.jpg?auto=format&fit=crop&w=600&q=80" alt="Why us" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" />
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-[0_12px_40px_rgba(15,28,46,.15)] hover:-translate-y-1 transition-all">
               <div className="w-full aspect-square bg-slate-50 relative overflow-hidden flex items-center justify-center p-6">
-                <img src="https://images.unsplash.com/photo-1563720360259-2dd916fc1bdf?auto=format&fit=crop&w=400&q=80" alt="Control Flow Valve" className="w-full h-full object-cover rounded shadow-md" />
+                <img src="https://5.imimg.com/data5/SELLER/Default/2026/2/583731186/JO/YK/XF/100942385/flow-control-valve.png?auto=format&fit=crop&w=400&q=80" alt="Control Flow Valve" className="w-full h-full object-cover rounded shadow-md" />
               </div>
               <div className="p-5 border-t border-slate-200">
                 <h3 className="font-bold text-[#0f1c2e] text-[17px]">Control Flow Valve</h3>
@@ -128,7 +128,7 @@ export default function Home() {
 
             <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-[0_12px_40px_rgba(15,28,46,.15)] hover:-translate-y-1 transition-all">
               <div className="w-full aspect-square bg-slate-50 relative overflow-hidden flex items-center justify-center p-6">
-                <img src="https://images.unsplash.com/photo-1581092334651-ddf7d54d92ee?auto=format&fit=crop&w=400&q=80" alt="Gear Box" className="w-full h-full object-cover rounded shadow-md" />
+                <img src="https://2.imimg.com/data2/DL/CN/MY-513384/oil-seal.jpg?auto=format&fit=crop&w=400&q=80" alt="Gear Box" className="w-full h-full object-cover rounded shadow-md" />
               </div>
               <div className="p-5 border-t border-slate-200">
                 <h3 className="font-bold text-[#0f1c2e] text-[17px]">Gear Box Oil Seal</h3>
@@ -137,7 +137,7 @@ export default function Home() {
 
             <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-[0_12px_40px_rgba(15,28,46,.15)] hover:-translate-y-1 transition-all">
               <div className="w-full aspect-square bg-slate-50 relative overflow-hidden flex items-center justify-center p-6">
-                <img src="https://images.unsplash.com/photo-1621509187321-df1e35ff6482?auto=format&fit=crop&w=400&q=80" alt="Fan" className="w-full h-full object-cover rounded shadow-md" />
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/12/CH/IA/OJ/98585185/vvv-500x500.jpg?auto=format&fit=crop&w=400&q=80" alt="Fan" className="w-full h-full object-cover rounded shadow-md" />
               </div>
               <div className="p-5 border-t border-slate-200">
                 <h3 className="font-bold text-[#0f1c2e] text-[17px]">Fan</h3>
