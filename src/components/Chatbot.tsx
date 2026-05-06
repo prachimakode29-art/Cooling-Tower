@@ -65,7 +65,18 @@ export default function Chatbot() {
       });
 
       if (!res.ok) {
-        throw new Error('Network response was not ok');
+        let errMsg = `Server error: ${res.status} ${res.statusText}`;
+        try {
+          const contentType = res.headers.get("content-type");
+          if (contentType && contentType.includes("application/json")) {
+            const errData = await res.json();
+            errMsg = errData.error || errMsg;
+          } else {
+            const textError = await res.text();
+            errMsg = textError || errMsg;
+          }
+        } catch(e) {}
+        throw new Error(errMsg);
       }
 
       const data = await res.json();
@@ -76,11 +87,11 @@ export default function Chatbot() {
         role: 'bot',
         timestamp: new Date()
       }]);
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error sending message", error);
       setMessages(prev => [...prev, {
         id: Date.now().toString() + 'bot_err',
-        text: "Sorry, I'm having trouble connecting to the server. Please try again later.",
+        text: `Sorry, there was an error: ${error.message}. Please make sure your API key is configured correctly.`,
         role: 'bot',
         timestamp: new Date()
       }]);

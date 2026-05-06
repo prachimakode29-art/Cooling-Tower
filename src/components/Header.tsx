@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MessageCircle, Facebook, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
+import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -72,27 +73,27 @@ export default function Header() {
               <div className="hidden md:flex flex-col items-end gap-1.5">
                 {/* Contact + Social Row */}
                 <div className="flex items-center gap-5">
-                  <div className="hidden lg:flex items-center gap-1.5">
-                    <div className="w-[20px] h-[20px] rounded-full bg-[#5b9a42]/10 flex items-center justify-center text-[#5b9a42]">
-                      <Phone size={10} />
+                  <div className="hidden lg:flex items-center gap-2.5">
+                    <div className="w-[32px] h-[32px] rounded-full bg-[#5b9a42]/10 flex items-center justify-center text-[#5b9a42]">
+                      <Phone size={16} />
                     </div>
-                    <a href="tel:+918887901762" className="text-[11px] text-slate-700 font-semibold hover:text-[#5b9a42] transition-colors">+91 8887901762</a>
+                    <a href="tel:+918887901762" className="text-[15px] text-slate-700 font-semibold hover:text-[#5b9a42] transition-colors">+91 8887901762</a>
                   </div>
-                  <div className="hidden lg:flex items-center gap-1.5">
-                    <div className="w-[20px] h-[20px] rounded-full bg-[#0369a1]/10 flex items-center justify-center text-[#0369a1]">
-                      <Mail size={10} />
+                  <div className="hidden lg:flex items-center gap-2.5">
+                    <div className="w-[32px] h-[32px] rounded-full bg-[#0369a1]/10 flex items-center justify-center text-[#0369a1]">
+                      <Mail size={16} />
                     </div>
-                    <a href="mailto:info@arohiect.com" className="text-[11px] text-[#0369a1] font-semibold hover:text-[#0f1c2e] transition-colors">info@arohiect.com</a>
+                    <a href="mailto:info@arohiect.com" className="text-[15px] text-[#0369a1] font-semibold hover:text-[#0f1c2e] transition-colors">info@arohiect.com</a>
                   </div>
                   
                   {/* Social circles */}
-                  <div className="flex items-center gap-1.5 border-l border-slate-200 pl-5 ml-1">
-                    <a href="tel:+918887901762" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#5b9a42] hover:bg-[#5b9a42] hover:text-white hover:border-[#5b9a42] transition-all" aria-label="Call"><Phone size={10} /></a>
-                    <a href="https://wa.me/+918887901762" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all" aria-label="WhatsApp"><MessageCircle size={10} /></a>
-                    <a href="https://www.facebook.com/ravikant.jha3" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition-all" aria-label="Facebook"><Facebook size={10} /></a>
-                    <a href="https://www.linkedin.com/in/ravi-kant-36a9ab199/" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all" aria-label="LinkedIn"><Linkedin size={10} /></a>
-                    <a href="#" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:border-[#1DA1F2] transition-all" aria-label="Twitter"><Twitter size={10} /></a>
-                    <a href="#" className="w-[22px] h-[22px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#E1306C] hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] hover:text-white hover:border-transparent transition-all" aria-label="Instagram"><Instagram size={10} /></a>
+                  <div className="flex items-center gap-2 border-l border-slate-200 pl-5 ml-2">
+                    <a href="tel:+918887901762" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#5b9a42] hover:bg-[#5b9a42] hover:text-white hover:border-[#5b9a42] transition-all" aria-label="Call"><Phone size={16} /></a>
+                    <a href="https://wa.me/+918887901762" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all" aria-label="WhatsApp"><FaWhatsapp size={16} /></a>
+                    <a href="https://www.facebook.com/ravikant.jha3" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition-all" aria-label="Facebook"><FaFacebookF size={15} /></a>
+                    <a href="https://www.linkedin.com/in/ravi-kant-36a9ab199/" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all" aria-label="LinkedIn"><FaLinkedinIn size={15} /></a>
+                    <a href="#" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:border-[#1DA1F2] transition-all" aria-label="Twitter"><FaTwitter size={16} /></a>
+                    <a href="#" className="w-[32px] h-[32px] rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-[#E1306C] hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] hover:text-white hover:border-transparent transition-all" aria-label="Instagram"><FaInstagram size={16} /></a>
                   </div>
                 </div>
 
@@ -166,7 +167,7 @@ export default function Header() {
           <div id="google_translate_element_mobile" className="overflow-hidden w-full text-left">
              {/* Google Translate will inject here */}
           </div>
-          <a href="tel:+918887901762" className="text-[#0369a1] font-semibold pt-4">📞 +91 88879 01762</a>
+          <a href="tel:+918887901762" className="text-[#0369a1] font-semibold pt-4 text-[16px]">📞 +91 88879 01762</a>
         </div>
       </header>
     </>

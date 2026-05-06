@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MessageCircle, Facebook, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -26,19 +27,19 @@ export default function Footer() {
                 <Phone size={18} className="text-white" />
               </a>
               <a href="https://wa.me/+918887901762" className="w-[38px] h-[38px] bg-[#25D366] rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 shadow-md shadow-[#25D366]/20 hover:opacity-90" aria-label="WhatsApp">
-                <MessageCircle size={18} className="text-white" />
+                <FaWhatsapp size={20} className="text-white" />
               </a>
               <a href="https://www.facebook.com/ravikant.jha3" className="w-[38px] h-[38px] bg-[#1877F2] rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 shadow-md shadow-[#1877F2]/20 hover:opacity-90" aria-label="Facebook">
-                <Facebook size={18} className="text-white" />
+                <FaFacebookF size={18} className="text-white" />
               </a>
               <a href="https://www.linkedin.com/in/ravi-kant-36a9ab199/" className="w-[38px] h-[38px] bg-[#0A66C2] rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 shadow-md shadow-[#0A66C2]/20 hover:opacity-90" aria-label="LinkedIn">
-                <Linkedin size={18} className="text-white" />
+                <FaLinkedinIn size={18} className="text-white" />
               </a>
               <a href="#" className="w-[38px] h-[38px] bg-[#1DA1F2] rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 shadow-md shadow-[#1DA1F2]/20 hover:opacity-90" aria-label="Twitter">
-                <Twitter size={18} className="text-white" />
+                <FaTwitter size={18} className="text-white" />
               </a>
               <a href="#" className="w-[38px] h-[38px] bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 shadow-md shadow-[#E1306C]/20 hover:opacity-90" aria-label="Instagram">
-                <Instagram size={18} className="text-white" />
+                <FaInstagram size={20} className="text-white" />
               </a>
             </div>
           </div>

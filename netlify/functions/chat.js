@@ -125,6 +125,7 @@ export const handler = async (event, context) => {
     console.error("Error generating response", err);
     return {
       statusCode: 500,
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ error: err.message || 'Internal Server Error' })
     };
   }

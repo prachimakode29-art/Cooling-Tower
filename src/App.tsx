@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
-import { Phone, MessageCircle, Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -27,21 +28,24 @@ function ScrollToTop() {
 
 function FloatingSocials() {
   return (
-    <div className="fixed right-0 top-1/2 -translate-y-1/2 flex flex-col z-[100] shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
-      <a href="tel:+918887901762" className="w-[42px] h-[42px] bg-[#5b9a42] flex items-center justify-center text-white hover:w-[48px] hover:-translate-x-1 transition-all rounded-l-md border-b border-white/10" aria-label="Phone">
-        <Phone size={18} />
+    <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-[100] bg-white/90 backdrop-blur-md p-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-200/50">
+      <a href="tel:+918887901762" className="w-[36px] h-[36px] bg-[#5b9a42]/10 text-[#5b9a42] hover:bg-[#5b9a42] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="Phone">
+        <Phone size={16} />
       </a>
-      <a href="#" className="w-[42px] h-[42px] bg-[#42d184] flex items-center justify-center text-white hover:w-[48px] hover:-translate-x-1 transition-all rounded-l-md border-b border-white/10" aria-label="WhatsApp">
-        <MessageCircle size={18} />
+      <a href="https://wa.me/+918887901762" className="w-[36px] h-[36px] bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="WhatsApp">
+        <FaWhatsapp size={18} />
       </a>
-      <a href="#" className="w-[42px] h-[42px] bg-[#3b5998] flex items-center justify-center text-white hover:w-[48px] hover:-translate-x-1 transition-all rounded-l-md border-b border-white/10" aria-label="Facebook">
-        <Facebook size={18} />
+      <a href="https://www.facebook.com/ravikant.jha3" className="w-[36px] h-[36px] bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="Facebook">
+        <FaFacebookF size={16} />
       </a>
-      <a href="#" className="w-[42px] h-[42px] bg-[#0077b5] flex items-center justify-center text-white hover:w-[48px] hover:-translate-x-1 transition-all rounded-l-md border-b border-white/10" aria-label="LinkedIn">
-        <Linkedin size={18} />
+      <a href="https://www.linkedin.com/in/ravi-kant-36a9ab199/" className="w-[36px] h-[36px] bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="LinkedIn">
+        <FaLinkedinIn size={16} />
       </a>
-      <a href="#" className="w-[42px] h-[42px] bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center text-white hover:w-[48px] hover:-translate-x-1 transition-all rounded-l-md" aria-label="Instagram">
-        <Instagram size={18} />
+      <a href="#" className="w-[36px] h-[36px] bg-[#1DA1F2]/10 text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="Twitter">
+        <FaTwitter size={16} />
+      </a>
+      <a href="#" className="w-[36px] h-[36px] bg-[#E1306C]/10 text-[#E1306C] hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] hover:text-white rounded-full flex items-center justify-center transition-all hover:scale-110" aria-label="Instagram">
+        <FaInstagram size={18} />
       </a>
     </div>
   );
